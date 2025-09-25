@@ -2,46 +2,50 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HSI Boarding School Purworejo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  
-  <header>
+  <!-- Header -->
+  <div class="header">
     <img src="images/logo (1).webp" alt="Logo HSI" class="logo">
     <h1>HSI Boarding School Purworejo</h1>
-    <h3>Website Profil Sederhana — Kelas X</h3>
+    <p class="subtitle">Website Profil Sederhana — Kelas X</p>
     <hr>
-  </header>
+  </div>
 
-  
-  <section class="foto">
-    <h2>📘 Pengantar</h2>
-    <p>
-      Selamat datang di website profil sederhana ana <br>
-      web ini berisi biodata, hobi, dan cita-cita ana sebagai siswa HSI Boarding School Purworejo. <br>
-      
-    </p>
-  </section>
+  <!-- Konten Utama -->
+  <main class="main">
 
-  
-  <section class="foto">
-    <h2>🖼️ my images</h2>
-    <p>ini adalah my kisah</p>
-    <img src="images/dho.jpg" alt="its me" class="avatar">
-    <p>
-      Saya tertarik di di dunia pengodingan karena menurut saya seru,saya ingin menjadi
-      <b><i>Frontend Developer</i></b> (gaji yang lumayan) 
-      yang berkontribusi secara <u>halal</u> & bermanfaat. <br>
-      
-    </p>
-  </section>
+    <!-- Pengantar -->
+    <div class="card">
+      <h2 class="section-title">📘 Pengantar</h2>
+      <p>
+        Selamat datang di website profil sederhana ana.  
+        Web ini berisi biodata, hobi, dan cita-cita ana sebagai siswa HSI Boarding School Purworejo.  
+      </p>
+    </div>
 
-  
-  <footer>
-    <a href="biodata.html" class="btn">Ke Halaman Biodata</a>
-  </footer>
+    <!-- Avatar Favorit -->
+    <div class="card">
+      <h2 class="section-title">🖼️ Avatar Favorit</h2>
+      <p>Ini adalah my kisah</p>
+      <img src="images/Killer_Peter_Thumbnail.webp" alt="Manhwa Favorit" class="avatar oval">
+      <p>
+        Saya tertarik di dunia pengodingan karena menurut saya seru.  
+        Saya ingin menjadi <b><i>Frontend Developer</i></b> (gaji yang lumayan)  
+        yang berkontribusi secara <u>halal</u> & bermanfaat.
+      </p>
+    </div>
+
+    <!-- Tombol ke Biodata -->
+    <div class="card" style="text-align:center;">
+      <a href="biodata.html" class="btn-link">➡️ Ke Halaman Biodata</a>
+    </div>
+
+  </main>
 
 </body>
 </html>

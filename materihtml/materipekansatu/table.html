@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 5 TABLE</title>
+    <style>
+        #table-basic{
+            width: 70%;
+            border-collapse: collapse;       
+        }
+        #table-basic td{
+            padding: 6px;
+            font-size: 16px;
+        }
+        #table-basic .bg-blue{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
     <h1>HTML 5 TABLE</h1>
     <hr />
     <h3>Table dasar</h3>
-    <table border="1" style="width: 60%;">
-        <tr>
+    <table border="1" id="table-basic">
+        <tr class="bg-blue">
             <td>No</td>
             <td>Nama</td>
             <td>Asal</td>
@@ -30,7 +45,50 @@
             <td>Bilal</td>
             <td>planet,bekasi</td>
         </tr>
+       
         
     </table>
+     <h3> Table Standar HTML5</h3>
+     <table  border="1" style="width: 80%;">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama Barang</th>
+                <th>Harga Barang</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>23/09/25</td>
+                <td>Es Teh Desa</td>
+                <td>Rp. 2.500,</td>
+                
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>23/09/25</td>
+                <td rowspan="2">martabak manis coklat keju</td>
+                <td>Rp. 20.000,</td>
+            </tr>
+             <tr>
+                <td>3.</td>
+                <td>23/09/25</td>
+                <!-- <td>martabak manis coklat keju</td> -->
+                <td>Rp. 20.000,</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <tr>
+                    
+                    <td colspan="3"><b>Total pengeluaran</b></td>
+                    <td>Rp 22.500,</td>
+                </tr>
+            </tr>
+        </tfoot>
+
+     </table>
 </body>
 </html>
