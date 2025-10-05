@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <br />
+      <h1 class="h1">JADWAL HARIAN SANTRI</h1>
+      <h3 class="h3">Pekan ini : HTML & CSS</h3>
+    </div>
+
+    <div class="tombol">
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="feedback.html" class="active">Feedback</a>
+    </div>
+    <br /><br /><br />
+    <div class="box">
+      <h3 id="h3" class="section-title">Formulir & masukan woi</h3>
+      <br />
+      <p>Berikan masukan terbaikmu yg baik-baik aja gausah ngehujat</p>
+      <form method="post" action="https://httpbin.org/post">
+        <label>Nama Anda (Opsional):</label>
+        <input type="text" placeholder="Tulis nama Anda" />
+
+        <label>Email Anda:</label>
+        <input type="email" placeholder="nama@email.com" required />
+
+        <label>Rating Kepuasan Website (Skala 1-10):</label>
+        <input
+          type="number"
+          placeholder="Masukkan angka 1 hingga 10"
+          required
+        />
+
+        <label>Rekomendasi Website Ini?</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="rekomendasi" required /> Ya,
+            Sangat</label
+          >
+          <label><input type="radio" name="rekomendasi" /> Mungkin Saja</label>
+          <label><input type="radio" name="rekomendasi" /> Tidak</label>
+        </div>
+
+        <label>Topik yang paling menarik:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Beranda</label>
+          <label><input type="checkbox" /> Biodata</label>
+          <label><input type="checkbox" /> Jadwal</label>
+          <label><input type="checkbox" /> Galeri</label>
+          <label><input type="checkbox" /> tab ini</label>
+        </div>
+
+        <label>Saran Pengembangan di Bidang:</label>
+        <select>
+          <option>-- Pilih Bidang --</option>
+          <option>UI/UX</option>
+          <option>Konten</option>
+          <option>Fitur</option>
+          <option>Keamanan</option>
+          <option>web design</option>
+          <option>database</option>
+        </select>
+
+        <label>Pesan/Saran Lengkap:</label>
+        <textarea
+          placeholder="Tulis pesan dan saran Anda secara detail di sini..."
+        ></textarea>
+
+        <button type="submit">Kirim Feedback</button>
+        <button type="reset">atur ulang</button>
+      </form>
+    </div>
+  </body>
+  <footer>
+    &copycopyrigth HSI 2025 | kontak evankaranganyar2010@gmail.com | @ev_doang
+  </footer>
+</html>
