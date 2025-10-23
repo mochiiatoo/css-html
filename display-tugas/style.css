@@ -1,0 +1,24 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px dashed #eee;
+  border-radius: 6px;
+}
+.pricing-area{
+    display: flex;
+    /* atur arah items horizontal atau vertical */
+    flex-direction: row;
+    gap: 14px;
+    /* default = flex-start */
+    justify-content: center;
+    /* atur letak vertical */
+    align-items: center;
+}
+.pro-blue{
+    border: 2px solid blue;
+    border-radius: 15px;
+}
